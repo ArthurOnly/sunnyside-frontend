@@ -266,6 +266,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Barlow',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
