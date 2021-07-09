@@ -21,6 +21,9 @@ module.exports = {
       zIndex: {
         '-10': '-10',
       },
+      letterSpacing: {
+        widestlg: '0.2em',
+      },
       fontFamily: {
         'Barlow': ['Barlow', 'sans-serif'],
         'Fraunces': ['Fraunces', 'serif']
