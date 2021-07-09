@@ -37,11 +37,12 @@
       <img src="images/icon-arrow-down.svg" class="mx-auto mt-14 w-5"/>
     </div>
   </header>
-  <section>
-    <div>
-      <img src="images/mobile/image-transform.jpg"/>
+  <section class="h-screen flex flex-col lg:flex-row">
+    <div class="h-3/6 lg:h-full lg:w-3/6">
+      <img class="visible lg:hidden h-full object-cover" src="images/mobile/image-transform.jpg"/>
+      <img class="hidden lg:flex h-full object-cover" src="images/desktop/image-transform.jpg"/>
     </div>
-    <div class="p-8 text-center flex gap-4 flex-col">
+    <div class="text-center flex gap-4 flex-col h-3/6 lg:w-3/6 lg:h-full justify-center p-8">
       <h1 class="font-Fraunces text-3xl font-bold text-tDarkBlue">Transform your brand</h1>
       <p class="text-tDarkGray">We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
@@ -49,20 +50,20 @@
         <span class="z-0 px-2">Learn more</span>
         <span class="absolute w-full h-4 bg-tYellow bottom-0 left-0 -z-10 rounded-full bg-opacity-25 group-hover:bg-opacity-100"></span>
       </a>
-
     </div>
   </section>
-  <section>
-    <div>
-      <img src="images/mobile/image-stand-out.jpg"/>
+  <section class="h-screen flex flex-col lg:flex-row-reverse">
+    <div class="h-3/6 lg:h-full lg:w-3/6">
+      <img class="visible lg:hidden" src="images/mobile/image-stand-out.jpg"/>
+      <img class="hidden lg:flex h-full object-cover" src="images/desktop/image-stand-out.jpg"/>
     </div>
-    <div class="p-8 text-center flex gap-4 flex-col">
-      <h1 class="font-Fraunces text-3xl font-bold text-tDarkBlue">Stand out to the right audience</h1>
-      <p class="text-tDarkGray">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-      <a href="#" class="group w-max font-Frauces font-black text-tDarkBlue relative mx-auto">
-        <span class="z-0 px-2">Learn more</span>
-        <span class="absolute w-full h-4 bg-tSoftRed bottom-0 left-0 -z-10 rounded-full bg-opacity-25 group-hover:bg-opacity-100"></span>
-      </a>
+    <div class="text-center flex gap-4 flex-col h-3/6 lg:w-3/6 lg:h-full justify-center p-8">
+        <h1 class="font-Fraunces text-3xl font-bold text-tDarkBlue">Stand out to the right audience</h1>
+        <p class="text-tDarkGray">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a href="#" class="group w-max font-Frauces font-black text-tDarkBlue relative mx-auto">
+          <span class="z-0 px-2">Learn more</span>
+          <span class="absolute w-full h-4 bg-tSoftRed bottom-0 left-0 -z-10 rounded-full bg-opacity-25 group-hover:bg-opacity-100"></span>
+        </a>
     </div>
   </section>
   <section>
