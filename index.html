@@ -16,15 +16,16 @@
   <header class="bg-theme-header-mobile bg-cover md:bg-theme-header text-tWhite bg-no-repeat bg-center h-80/100">
     <nav class="mx-auto px-8 py-14 flex justify-between">
       <a href="#"><img src="images/logo.svg"></a>
-      <a class="md:hidden"><img src="images/icon-hamburger.svg"/></a>
+      <a class="md:hidden"><img src="images/icon-hamburger.svg" id="menu-button"/></a>
       <ul class="hidden md:flex gap-4 font-Barlow">
         <li><a href="#" class="px-6 py-4 rounded-3xl">About</a></li>
         <li><a href="#" class="px-6 py-4 rounded-3xl">Services</a></li>
         <li><a href="#" class="px-6 py-4 rounded-3xl">Projects</a></li>
         <li><a href="#" class="px-6 py-4 font-Fraunces uppercase bg-tWhite text-black hover:text-tWhite hover:bg-white hover:bg-opacity-25 rounded-3xl">Contact</a></li>
       </ul>
-      <div class="hidden text-tDarkGray font-Barlow absolute right-0 w-full px-4">
-        <ul class="text-center bg-white py-8 flex gap-4 flex-col">
+      <div class="text-tDarkGray font-Barlow absolute right-0 w-full px-8 transform translate-y-12 duration-500 transition-all overflow-hidden max-h-0" id="menu-mobile">
+        <div class="w-6 h-6 ml-auto bg-triangle"></div>
+        <ul class="text-center bg-white py-8 flex gap-8 flex-col">
           <li><a href="#" class="px-6 py-4 rounded-3xl">About</a></li>
           <li><a href="#" class="px-6 py-4 rounded-3xl">Services</a></li>
           <li><a href="#" class="px-6 py-4 rounded-3xl">Projects</a></li>
@@ -42,7 +43,7 @@
       <img class="visible lg:hidden w-full object-cover" src="images/mobile/image-transform.jpg"/>
       <img class="hidden lg:flex w-full object-cover" src="images/desktop/image-transform.jpg"/>
     </div>
-    <div class="text-center lg:text-left lg:p-32 flex gap-4 flex-col h-3/6 lg:w-3/6 lg:h-full justify-center p-8 m-auto">
+    <div class="text-center lg:text-left lg:p-32 flex gap-6 flex-col h-3/6 lg:w-3/6 lg:h-full justify-center p-8 m-auto">
       <h1 class="font-Fraunces text-4xl font-bold text-tDarkBlue">Transform your brand</h1>
       <p class="text-tDarkGray">We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
@@ -57,7 +58,7 @@
       <img class="visible lg:hidden w-full object-cover" src="images/mobile/image-stand-out.jpg"/>
       <img class="hidden lg:flex w-full object-cover" src="images/desktop/image-stand-out.jpg"/>
     </div>
-    <div class="text-center lg:text-left flex gap-4 flex-col h-3/6 lg:w-3/6 lg:h-full justify-center p-8 m-auto lg:p-32">
+    <div class="text-center lg:text-left flex gap-6 flex-col h-3/6 lg:w-3/6 lg:h-full justify-center p-8 m-auto lg:p-32">
         <h1 class="font-Fraunces text-4xl font-bold text-tDarkBlue">Stand out to the right audience</h1>
         <p class="text-tDarkGray">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
         <a href="#" class="group w-max font-Fraunces font-black text-tDarkBlue relative mx-auto lg:mx-0">
@@ -86,7 +87,7 @@
     </div>
   </section>
   <section class="px-8 py-28">
-    <h1 class="text-3xl font-Fraunces uppercase text-center text-tGray tracking-widestlg mb-8">Client testimonials</h1>
+    <h1 class="text-xl font-Fraunces uppercase text-center text-tGray tracking-widest mb-8">Client testimonials</h1>
     <div class="flex flex-col lg:flex-row py-8 gap-32">
       <div class="flex flex-col gap-8 items-center text-center lg:w-2/6">
         <img src="images/image-emily.jpg" class="rounded-full w-16" />
@@ -125,25 +126,39 @@
     <img src="images/mobile/image-gallery-cone.jpg" class="w-full lg:hidden"/>
     <img src="images/mobile/image-gallery-sugar-cubes.jpg" class="w-full lg:hidden"/>
   </section>
-  <footer class="bg-tModerateCyan py-16 px-8 text-tCyan text-center flex items-center flex-col gap-8">
+  <footer class="bg-tLightCyan py-16 px-8 text-tCyan text-center flex items-center flex-col gap-8">
     
     <img src="images/logo-green.svg"/>
     <ul class="flex gap-6">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="hover:text-tWhite">About</a></li>
+      <li><a href="#" class="hover:text-tWhite">Services</a></li>
+      <li><a href="#" class="hover:text-tWhite">Projects</a></li>
+      <li><a href="#" class="hover:text-tWhite">Contact</a></li>
     </ul>
     <ul class="flex gap-6">
-      <li><img src="images/icon-facebook.svg"/></li>
-      <li><img src="images/icon-instagram.svg"/></li>
-      <li><img src="images/icon-twitter.svg"/></li>
-      <li><img src="images/icon-pinterest.svg"/></li>
+      <li><a href="#" class="hover:text-tWhite"><img src="images/icon-facebook.svg"/></a></li>
+      <li><a href="#" class="hover:text-tWhite"><img src="images/icon-instagram.svg"/></a></li>
+      <li><a href="#" class="hover:text-tWhite"><img src="images/icon-twitter.svg"/></a></li>
+      <li><a href="#" class="hover:text-tWhite"><img src="images/icon-pinterest.svg"/></a></li>
     </ul>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/ArthurOnly">Arthur Medeiros Paiva - https://github.com/ArthurOnly</a>.
     </div>
   </footer>
+
+  <script>
+    const menuButton = document.querySelector("#menu-button")
+    const menuMobile = document.querySelector("#menu-mobile")
+    menuButton.addEventListener("click", () => {
+      if (menuMobile.classList.contains("max-h-0")){
+        menuMobile.classList.add("max-h-96")
+        menuMobile.classList.remove("max-h-0")
+      } else{
+        menuMobile.classList.add("max-h-0")
+        menuMobile.classList.remove("max-h-96")
+      }
+    })
+  </script>
 </body>
 </html>

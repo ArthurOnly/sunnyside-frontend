@@ -15,6 +15,7 @@ module.exports = {
         tCyan: "hsl(167, 40%, 24%)",
         tBlue: "hsl(198, 62%, 26%)",
         tModerateCyan: "hsl(168, 34%, 41%)",
+        tLightCyan: "#90D4C5",
         tDarkBlue: "hsl(212, 27%, 19%)",
         tVeryDarkGray: "hsl(213, 9%, 39%)",
         tDarkGray: "hsl(232, 10%, 55%)",
@@ -36,7 +37,8 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'theme-header': "url('/images/desktop/image-header.jpg')",
-        'theme-header-mobile': "url('/images/mobile/image-header.jpg')"
+        'theme-header-mobile': "url('/images/mobile/image-header.jpg')",
+        'triangle': 'linear-gradient(315deg, rgba(255,255,255,1) 50%, rgba(0,212,255,0) 50%);'
       })
     },
     screens: {
