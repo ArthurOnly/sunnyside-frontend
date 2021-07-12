@@ -6,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontSize: {
+        base: ['20px', { lineHeight: '1.5rem' }],
+      },
       colors: {
         tSoftRed: "hsl(7, 99%, 70%)",
         tYellow: "hsl(51, 100%, 49%)",
@@ -18,6 +21,9 @@ module.exports = {
         tGray: "hsl(210, 4%, 67%)",
         tWhite: "hsl(0, 0%, 100%)"
       },
+      height: (theme) => ({
+        '80/100': "calc(100vh - 160px)"
+      }),
       zIndex: {
         '-10': '-10',
       },
