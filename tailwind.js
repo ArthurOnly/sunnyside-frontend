@@ -6,8 +6,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontSize: {
-        base: ['20px', { lineHeight: '1.5rem' }],
+      brightness: {
+        900: 900
       },
       colors: {
         tSoftRed: "hsl(7, 99%, 70%)",
@@ -898,7 +898,7 @@ module.exports = {
     boxDecorationBreak: ['responsive'],
     boxShadow: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
     boxSizing: ['responsive'],
-    brightness: ['responsive'],
+    brightness: ['responsive', 'hover'],
     clear: ['responsive'],
     container: ['responsive'],
     contrast: ['responsive'],
@@ -910,7 +910,7 @@ module.exports = {
     divideWidth: ['responsive'],
     dropShadow: ['responsive'],
     fill: ['responsive'],
-    filter: ['responsive'],
+    filter: ['responsive', 'hover'],
     flex: ['responsive'],
     flexDirection: ['responsive'],
     flexGrow: ['responsive'],
