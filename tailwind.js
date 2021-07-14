@@ -36,8 +36,8 @@ module.exports = {
         'Fraunces': ['Fraunces', 'serif']
       },
       backgroundImage: theme => ({
-        'theme-header': "url('/images/desktop/image-header.jpg')",
-        'theme-header-mobile': "url('/images/mobile/image-header.jpg')",
+        'theme-header': "url('images/desktop/image-header.jpg')",
+        'theme-header-mobile': "url('images/mobile/image-header.jpg')",
         'triangle': 'linear-gradient(315deg, rgba(255,255,255,1) 50%, rgba(0,212,255,0) 50%);'
       })
     },
